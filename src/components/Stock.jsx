@@ -1,6 +1,10 @@
 import React from "react";
 
-class Button extends React.Component {
+//Importamos un pequeño componente dentro de otro componente
+
+import ComprarButton from "./ComprarButton";
+
+class Stock extends React.Component {
   constructor(props) {
     super(props);
 
@@ -64,9 +68,11 @@ class Button extends React.Component {
         </p>
 
         {this.state.msg ? <h4>{this.state.msg}</h4> : null}
+        <ComprarButton/>
       </div>
+      
     );
   }
 }
 
-export default Button;
+export default Stock;
