@@ -1,7 +1,6 @@
 import React from "react";
 
 //Importamos un pequeño componente dentro de otro componente
-
 import ComprarButton from "./ComprarButton";
 
 class Stock extends React.Component {
@@ -44,6 +43,7 @@ class Stock extends React.Component {
     }
   }
 
+  // ====> Renderizamos el componente
   render() {
     return (
       <div className="buttonComponent">
@@ -61,16 +61,15 @@ class Stock extends React.Component {
         </span>
 
         <p>
-          Carrito: {" "}
+          Carrito:{" "}
           {this.state.counter <= 0
             ? "Todavía no tienes nada en el carrito"
             : this.state.counter}
         </p>
 
         {this.state.msg ? <h4>{this.state.msg}</h4> : null}
-        <ComprarButton/>
+        <ComprarButton />
       </div>
-      
     );
   }
 }
