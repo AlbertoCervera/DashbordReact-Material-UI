@@ -98,6 +98,8 @@ export default function SxProp() {
             textShadow: "0px 0px 1px",
           },
         }}
+
+
       />
     </div>
   );
