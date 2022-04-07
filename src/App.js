@@ -9,6 +9,7 @@ function App() {
 	return (
 		<div className="App">
 			<AppBar/>
+			
 			<DataGrid/>
 			{/* <div className="container"> */}
 				{/* Dialog y Confirmar */}
