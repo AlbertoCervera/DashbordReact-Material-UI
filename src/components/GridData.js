@@ -9,10 +9,10 @@ export default function SxProp() {
     useEffect(()=>{
       getApiData()
       
-    },[])
+    },[stateData])
 
     const getApiData = async () => {
-      const data = await axios.get("https://jsonplaceholder.typicode.com/users");
+      const data = await axios.get("http://localhost:80/apiphp/obtener_videojuegos.php");
       const UsuariosData = await data.data;
       setStateData(await UsuariosData)
     };
@@ -23,21 +23,21 @@ export default function SxProp() {
   const columns = [
     { field: "id", headerName: "ID", width: 90 },
     {
-      field: "name",
+      field: "nombre",
       headerName: "Nombre",
       width: 150,
       editable: true,
       
     },
     {
-      field: "username",
-      headerName: "Nombre de Usuario",
+      field: "precio",
+      headerName: "Precio",
       width: 150,
       editable: true,
     },
     {
-      field: "email",
-      headerName: "Email",
+      field: "calificacion",
+      headerName: "Calificación",
       width: 200,
       editable: true,
       headerAlign: 'center',
@@ -45,36 +45,7 @@ export default function SxProp() {
    
       
     },
-    {
-      field: "fullName",
-      headerName: "Nombre y Usuario",
-      description: "This column has a value getter and is not sortable.",
-      sortable: false,
-      resize: true,
-      width: 400,
-      valueGetter: (params) =>
-        `${params.row.name || ""}  @${params.row.username || ""}`,
-    },
-    {
-      field: "phone",
-      headerName: "Teléfono",
-      width: 300,
-      editable: true,
-      headerAlign: 'center',
-      align: "left"
-      
-    },
-    {
-      field: "address",
-      headerName: "Calle",
-      width: 200,
-      editable: true,
-      headerAlign: 'center',
-      align: "left",
-      valueGetter: (params) =>
-        `${params.row.address.street } `,
-      
-    },
+    
   ];
 
 

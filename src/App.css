@@ -1,94 +1,116 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bolder;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
 }
 
-
-.container{
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(90deg, rgba(2,0,36,0.8518518518518519) 0%, rgba(9,9,121,0.6736111111111112) 35%, rgba(0,212,255,0.6319444444444444) 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 5px;
-
-}
-
-.buttonComponent{
-    background-color: aliceblue;
-    width: 400px;
-    height: 200px;
-    border-radius: 4px;
-    box-shadow: 0px 0px 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 40px;
-    position: relative;
-}
-
-.buttonComponent span{
-    display: flex;
-    gap: 20px;
+*::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
   
 }
 
-.buttonComponent button{
-    cursor: pointer;
+
+
+*::-webkit-scrollbar-thumb {
+   
+    /* background: -webkit-linear-gradient(to right, #0059ff, #0fb0fa);  
+    background: linear-gradient(to right, #0059ff, #0fb0fa);  */
+    background-color: rgb(43, 43, 43);
+    border-radius: 10px;
+    
   
 }
 
-.buttonComponent span button{
-    background: linear-gradient(90deg, rgba(107,102,185,0.8518518518518519) 0%, rgba(109,109,255,0.6736111111111112) 35%, rgba(159,0,255,0.6319444444444444) 100%);
-    padding: 7px 10px;
-    color: black;
-    font-size: 16px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bolder;
-    border: none;
-    border-radius: 40px;
-    box-shadow: 0px 0px 10px black;
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 0.8518518518518519) 0%,
+    rgba(9, 9, 121, 0.6736111111111112) 35%,
+    rgba(0, 212, 255, 0.6319444444444444) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
 }
 
-.buttonComponent p{
-    font-size: 16px;
-    font-weight: bolder;
+.buttonComponent {
+  background-color: aliceblue;
+  width: 400px;
+  height: 200px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
 }
 
-.buttonComponent h4{
-    background-color: rgb(255, 153, 153);
-    border-radius: 4px;
-    padding: 2px 10px;
-    color: red;
-    position: absolute;
-    bottom: 50px;
+.buttonComponent span {
+  display: flex;
+  gap: 20px;
 }
 
-
-
-#comprar{
-    background: #01d9ff;
-    padding: 3px 10px;
-    color: black;
-    font-size: 14px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bolder;
-    border: none;
-    border-radius: 40px;
-    box-shadow: 0px 0px 10px black;
+.buttonComponent button {
+  cursor: pointer;
 }
 
-.alertDialog{
-    max-width: 400px;
-    width: 400px;
-    padding: 10px 0px;
-    background-color: white;
-    text-align: center;
+.buttonComponent span button {
+  background: linear-gradient(
+    90deg,
+    rgba(107, 102, 185, 0.8518518518518519) 0%,
+    rgba(109, 109, 255, 0.6736111111111112) 35%,
+    rgba(159, 0, 255, 0.6319444444444444) 100%
+  );
+  padding: 7px 10px;
+  color: black;
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bolder;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0px 0px 10px black;
 }
 
+.buttonComponent p {
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.buttonComponent h4 {
+  background-color: rgb(255, 153, 153);
+  border-radius: 4px;
+  padding: 2px 10px;
+  color: red;
+  position: absolute;
+  bottom: 50px;
+}
+
+#comprar {
+  background: #01d9ff;
+  padding: 3px 10px;
+  color: black;
+  font-size: 14px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bolder;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0px 0px 10px black;
+}
+
+.alertDialog {
+  max-width: 400px;
+  width: 400px;
+  padding: 10px 0px;
+  background-color: white;
+  text-align: center;
+}
